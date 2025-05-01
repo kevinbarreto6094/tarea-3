@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+     <script>
+
+var cantidadMascotas = prompt("¿Cuántas mascotas tienes? (0, 1, 2 o más de 2)");
+
+switch (parseInt(cantidadMascotas)) {
+    case 0:
+        document.write("Usted no tiene mascotas.");
+     
+        document.write('<img src="https://img.freepik.com/vector-gratis/dibujado-mano-ilustracion-dibujos-animados-ojos-tristes_23-2150568435.jpg?semt=ais_hybrid&w=740" alt="Tristeza" />');
+        break;
+
+    case 1:
+        var nombreMascota = prompt("¿Qué mascota tienes?");
+        document.write("Usted tiene un@ mascota y se llama " + nombreMascota + ".");
+        break;
+
+    case 2:
+        var nombre1 = prompt("¿Cómo se llama la primera mascota?");
+        var nombre2 = prompt("¿Cómo se llama la segunda mascota?");
+        document.write("Usted tiene 2 mascotas y se llaman " + nombre1 + " y " + nombre2 + ".");
+        break;
+
+    default:
+        document.write("Usted tiene más de 2 mascotas.");
+
+}
+
+    </script>
+
+</body>
+
+</html>
